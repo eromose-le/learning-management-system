@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
+import "./style.css";
 
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { useMediaQuery, useTheme } from "@mui/material";

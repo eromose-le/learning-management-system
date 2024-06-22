@@ -12,7 +12,7 @@ const LandingDescription = () => {
   const isMd = useMediaQuery(theme.breakpoints.up("md"));
 
   return (
-    <Container className="my-32 max-w-screen-2xl m-auto">
+    <Container className="mt-24 md:mt-32 max-w-screen-2xl m-auto">
       {isMd ? (
         <LandingDescriptionDesktop
           LandingDescriptionCardA={
@@ -79,7 +79,7 @@ const LandingDescription = () => {
               subtitle2="Experiences for Students"
               description="students can access interactive and engaging learning experiences that foster curiosity, creativity, and critical thinking skills"
               cardStyle="rotated"
-              arrowPosition="right-[250px]"
+              arrowPosition="right-[220px]"
               arrowIconType="default"
             />
           }

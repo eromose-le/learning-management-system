@@ -88,7 +88,7 @@ const LandingDescriptionMobileCard: React.FC<LandingDescriptionCardProps> = ({
         <div
           className={clsx(
             "absolute",
-            position === "top" ? "top-0" : "bottom-0",
+            position === "top" ? "top-4" : "bottom-4",
             arrowPosition
           )}
         >
