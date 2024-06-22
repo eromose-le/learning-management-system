@@ -1,13 +1,11 @@
 import Container from "@/common/Container";
-import { Button, Typography } from "@mui/material";
-import heroImage from "../../../../../public/images/hero-image.svg";
-import Image from "next/image";
+import { Typography } from "@mui/material";
 
 export default function LandingHero2() {
   return (
     <Container
       component="section"
-      className="flex flex-col-reverse md:items-end md:flex-row justify-between mt-0 md:mt-32 gap-8 md:gap-14"
+      className="flex flex-col md:items-end md:flex-row justify-between mt-12 md:mt-32 gap-8 md:gap-14 max-w-screen-2xl m-auto"
     >
       <div className="flex-1">
         <div className="flex flex-col max-w-md text-center md:text-start gap-6 md:gap-8">

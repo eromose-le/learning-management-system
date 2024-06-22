@@ -8,20 +8,20 @@ const HamburgerMenuIcon: FC<HamburgerMenuIconType> = ({ ...props }) => (
     <path
       d="M3 12.9968H21"
       stroke="#292D32"
-      stroke-width="1.5"
-      stroke-linecap="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
     />
     <path
       d="M3 22.0183H21"
       stroke="#292D32"
-      stroke-width="1.5"
-      stroke-linecap="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
     />
     <path
       d="M3 31.0396H21"
       stroke="#292D32"
-      stroke-width="1.5"
-      stroke-linecap="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
     />
   </SVGIcon>
 );

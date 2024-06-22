@@ -43,13 +43,13 @@ const renderIcon = (type: IconType) => {
 const renderArrowIcon = (type: ArrowIconType) => {
   switch (type) {
     case "inverse":
-      return <ArrowUpInverseIcon />;
+      return <ArrowUpInverseIcon width="90px" height="90px" />;
     default:
-      return <ArrowUpIcon />;
+      return <ArrowUpIcon width="90px" height="90px" />;
   }
 };
 
-const LandingDescriptionCard: React.FC<LandingDescriptionCardProps> = ({
+const LandingDescriptionMobileCard: React.FC<LandingDescriptionCardProps> = ({
   position,
   iconType,
   title,
@@ -74,7 +74,7 @@ const LandingDescriptionCard: React.FC<LandingDescriptionCardProps> = ({
 
   return (
     <Box
-      className="relative p-9 rounded-lg w-[370px] h-[370px]"
+      className="relative py-8 px-4 rounded-lg w-[290px] h-[290px]"
       style={{ position: "relative" }}
     >
       <div className="absolute inset-0 overflow-hidden rounded-lg">
@@ -88,11 +88,11 @@ const LandingDescriptionCard: React.FC<LandingDescriptionCardProps> = ({
         <div
           className={clsx(
             "absolute",
-            position === "top" ? "top-[-0px]" : "bottom-[0px]",
+            position === "top" ? "top-0" : "bottom-0",
             arrowPosition
           )}
         >
-          <div className="bg-tertiary-light rounded-full border">
+          <div className="bg-tertiary-light rounded-full border p-1">
             {renderArrowIcon(arrowIconType)}
           </div>
         </div>
@@ -100,18 +100,24 @@ const LandingDescriptionCard: React.FC<LandingDescriptionCardProps> = ({
 
       <div
         className={
-          cardStyle === "rotated" ? "flex flex-col-reverse gap-4" : ""
+          cardStyle === "rotated" ? "flex flex-col-reverse gap-4 md:gap-14" : ""
         }
       >
         <div className={`${renderIconPositions[cardStyle]}`}>
           {renderIcon(iconType)}
         </div>
         <div>
-          <Typography variant="h4" className="font-bold text-black mb-4">
+          <Typography
+            variant="h4"
+            className="font-bold text-black mb-2 md:mb-4"
+          >
             {title} <span className="text-blue-500 mr-2">{subtitle}</span>
             {subtitle2}
           </Typography>
-          <Typography variant="h3" className="text-gray-500 font-normal mt-2">
+          <Typography
+            variant="body2"
+            className="text-gray-500 font-normal mt-2"
+          >
             {description}
           </Typography>
         </div>
@@ -120,4 +126,4 @@ const LandingDescriptionCard: React.FC<LandingDescriptionCardProps> = ({
   );
 };
 
-export default LandingDescriptionCard;
+export default LandingDescriptionMobileCard;
