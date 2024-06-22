@@ -122,7 +122,7 @@ export function customizeTheme(theme: ThemeOptions = {}) {
         },
       },
       h1: {
-        fontSize: "2rem", // 64px
+        fontSize: "2.2rem", // 64px
         fontWeight: "700",
         letterSpacing: "-2%",
         fontFamily: `${work_sans.style.fontFamily}, serif`,
@@ -157,10 +157,10 @@ export function customizeTheme(theme: ThemeOptions = {}) {
         },
       },
       h5: {
-        fontSize: "1.875rem", // 30px
+        fontSize: "1.175rem", // 30px
         fontFamily: `${work_sans.style.fontFamily}, serif`,
         [defaultTheme.breakpoints.down("sm")]: {
-          fontSize: "1.5rem", // 24px for mobile
+          fontSize: "0.8rem", // 24px for mobile
         },
       },
       h6: {
