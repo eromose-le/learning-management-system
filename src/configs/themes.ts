@@ -149,7 +149,7 @@ export function customizeTheme(theme: ThemeOptions = {}) {
         },
       },
       h4: {
-        fontSize: "1.65rem", // 36px
+        fontSize: "1.45rem", // 36px
         fontWeight: "600",
         fontFamily: `${work_sans.style.fontFamily}, serif`,
         [defaultTheme.breakpoints.down("sm")]: {
@@ -157,7 +157,7 @@ export function customizeTheme(theme: ThemeOptions = {}) {
         },
       },
       h5: {
-        fontSize: "1.175rem", // 30px
+        fontSize: "1.025rem", // 30px
         fontFamily: `${work_sans.style.fontFamily}, serif`,
         [defaultTheme.breakpoints.down("sm")]: {
           fontSize: "0.8rem", // 24px for mobile

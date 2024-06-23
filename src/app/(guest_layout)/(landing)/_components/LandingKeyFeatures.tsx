@@ -31,7 +31,7 @@ const LandingKeyFeatures = () => {
       component="section"
       className="mt-12 md:mt-28 pt-12 pb-20 bg-primary flex-col justify-start"
     >
-      <div className="max-w-screen-2xl m-auto">
+      <div className="max-w-screen-2xl m-auto px-9 [@media(max-width:925px)]:px-9">
         <div className="flex lg:hidden aspect-w-5 aspect-h-3 w-full">
           <Image
             src={featureAvatar}

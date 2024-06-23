@@ -52,7 +52,7 @@ const config: Config = {
         "6xl": "4rem", // 64px
       },
       screens: {
-        xs: "0px",
+        xs: "445px",
         sm: "640px",
         md: "768px",
         lg: "1024px",

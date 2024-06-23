@@ -21,7 +21,7 @@ const HeaderActiveLink: React.FC<props> = ({ href: link = "/", text }) => {
           isActive(pathname, link)
             ? "text-secondary font-semibold"
             : "text-tertiary"
-        } text-xl font-normal`}
+        } text-sm font-normal`}
         // fontFamily="Arial, sans-serif"
       >
         {text}

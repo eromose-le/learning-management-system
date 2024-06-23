@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import ThemeRegistry from "@/configs/ThemeRegistry";
 import PublicHeader from "@/common/PublicHeader";
 import "./globals.css";
+import Footer from "@/common/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
         <body className="grid grid-cols-12 gap-0 auto-rows-max">
           <PublicHeader />
           <main className="col-span-12 auto-rows-auto">{children}</main>
+          <Footer />
         </body>
       </ThemeRegistry>
     </html>
