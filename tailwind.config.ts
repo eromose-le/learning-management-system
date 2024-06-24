@@ -24,7 +24,7 @@ const config: Config = {
         tertiary: {
           DEFAULT: "#8F8F8F",
           light: "#F8F9FA",
-          dark: "#8F8F8F",
+          dark: "#E6EAEE",
         },
       },
       spacing: {

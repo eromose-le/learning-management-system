@@ -92,7 +92,7 @@ const LandingDescriptionMobileCard: React.FC<LandingDescriptionCardProps> = ({
             arrowPosition
           )}
         >
-          <div className="bg-tertiary-light rounded-full border p-1">
+          <div className="p-1 border rounded-full bg-tertiary-light">
             {renderArrowIcon(arrowIconType)}
           </div>
         </div>
@@ -109,14 +109,14 @@ const LandingDescriptionMobileCard: React.FC<LandingDescriptionCardProps> = ({
         <div>
           <Typography
             variant="h4"
-            className="font-bold text-black mb-2 md:mb-4"
+            className="mb-2 font-bold text-black md:mb-4"
           >
-            {title} <span className="text-blue-500 mr-2">{subtitle}</span>
+            {title} <span className="mr-2 text-blue-500">{subtitle}</span>
             {subtitle2}
           </Typography>
           <Typography
             variant="body2"
-            className="text-gray-500 font-normal mt-2"
+            className="mt-2 font-normal text-gray-500"
           >
             {description}
           </Typography>

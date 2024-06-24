@@ -7,10 +7,10 @@ export default function LandingHero() {
   return (
     <Container
       component="section"
-      className="flex flex-col-reverse md:flex-row justify-between mt-0 md:mt-24 gap-8 md:gap-14 max-w-screen-2xl m-auto"
+      className="flex flex-col-reverse justify-between gap-8 m-auto mt-0 md:flex-row md:mt-24 md:gap-14 max-w-screen-2xl"
     >
       <div className="flex-1">
-        <div className="flex flex-col max-w-md text-center md:text-start gap-6 md:gap-8 mt-6 md:mt-0">
+        <div className="flex flex-col max-w-md gap-6 mt-6 text-center md:text-start md:gap-8 md:mt-0">
           <Typography variant="h1" className="font-semibold text-secondary">
             Transforming Education, Empowering Success
           </Typography>
@@ -20,7 +20,7 @@ export default function LandingHero() {
           </Typography>
         </div>
 
-        <div className="flex flex-col md:flex-row mt-7 md:mt-9 gap-6 md:gap-3">
+        <div className="flex flex-col gap-6 md:flex-row mt-7 md:mt-9 md:gap-3">
           <Button variant="contained" size="large" className="px-10">
             Get started
           </Button>

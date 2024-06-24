@@ -101,7 +101,7 @@ export function customizeTheme(theme: ThemeOptions = {}) {
         fontWeight: "500",
         fontFamily: `${work_sans.style.fontFamily}, serif`,
         [defaultTheme.breakpoints.down("sm")]: {
-          fontSize: "0.875rem", // 14px for mobile
+          fontSize: "0.775rem", // 14px for mobile
         },
       },
       small: {

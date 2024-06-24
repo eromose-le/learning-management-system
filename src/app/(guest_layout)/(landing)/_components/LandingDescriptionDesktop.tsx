@@ -1,17 +1,13 @@
 const LandingDescriptionDesktop = ({
-  LandingDescriptionCardA,
-  LandingDescriptionCardB,
-  LandingDescriptionCardC,
+  cards,
 }: {
-  LandingDescriptionCardA: React.ReactNode;
-  LandingDescriptionCardB: React.ReactNode;
-  LandingDescriptionCardC: React.ReactNode;
+  cards: React.ReactNode[];
 }) => {
   return (
     <div className="flex items-center justify-center flex-wrap gap-9 w-full">
-      {LandingDescriptionCardA}
-      {LandingDescriptionCardB}
-      {LandingDescriptionCardC}
+      {cards.map((card, index) => (
+        <div key={index}>{card}</div>
+      ))}
     </div>
   );
 };
