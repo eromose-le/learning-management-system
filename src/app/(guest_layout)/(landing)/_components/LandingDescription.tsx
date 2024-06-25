@@ -115,7 +115,6 @@ const LandingDescription = () => {
       ) : (
         <SwipperCarosel slides={mobileSlides} className="mt-[-50px] pb-14" />
       )}
-
       <div className="hidden"></div>
     </Container>
   );

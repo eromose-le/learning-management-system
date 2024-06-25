@@ -1,4 +1,5 @@
 import Container from "@/common/Container";
+import Reveals from "@/common/Reveals";
 import { Typography } from "@mui/material";
 
 export default function LandingHero2() {
@@ -9,9 +10,11 @@ export default function LandingHero2() {
     >
       <div className="flex-1">
         <div className="flex flex-col max-w-md text-center md:text-start gap-6 md:gap-8">
-          <Typography variant="h1" className="font-semibold text-secondary">
-            Elevate your school's performance with our tailored solutions
-          </Typography>
+          <Reveals>
+            <Typography variant="h1" className="font-semibold text-secondary">
+              Elevate your school's performance with our tailored solutions
+            </Typography>
+          </Reveals>
         </div>
       </div>
       <div className="flex flex-1 items-baseline justify-end">

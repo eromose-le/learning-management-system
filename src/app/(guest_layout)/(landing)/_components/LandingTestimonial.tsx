@@ -3,6 +3,7 @@ import { Typography } from "@mui/material";
 import LandingTestimonialCard from "./LandingTestimonialCard";
 import SwipperCarosel from "./SwipperCarosel";
 import { Testimonial } from "./types";
+import Reveals from "@/common/Reveals";
 
 const testimonials: Testimonial[] = [
   {
@@ -43,14 +44,16 @@ const LandingTestimonial: React.FC = () => {
 
   return (
     <Container component="section" className="flex-col w-full py-8 md:py-20">
-      <div className="flex items-center justify-center w-full pb-10 md:py-24">
-        <Typography
-          variant="h1"
-          className="font-semibold text-center max-w-60 md:max-w-md"
-        >
-          What people say about our app
-        </Typography>
-      </div>
+      <Reveals>
+        <div className="flex items-center justify-center w-full pb-10 md:py-24">
+          <Typography
+            variant="h1"
+            className="font-semibold text-center max-w-60 md:max-w-md"
+          >
+            What people say about our app
+          </Typography>
+        </div>
+      </Reveals>
 
       <SwipperCarosel
         slides={mobileSlides}

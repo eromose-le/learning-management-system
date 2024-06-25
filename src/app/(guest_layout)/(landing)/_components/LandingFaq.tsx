@@ -8,6 +8,7 @@ import {
 } from "@mui/material";
 import React from "react";
 import { FaqType } from "./types";
+import Reveals from "@/common/Reveals";
 
 const LandingFaq = () => {
   const faqs: FaqType[] = [
@@ -35,14 +36,19 @@ const LandingFaq = () => {
           <Typography variant="h3" className="font-normal">
             What do you want to know?
           </Typography>
-          <Typography variant="h1" className="font-semibold">
-            The most frequently asked questions
-          </Typography>
+          <Reveals>
+            <Typography variant="h1" className="font-semibold">
+              The most frequently asked questions
+            </Typography>
+          </Reveals>
         </div>
-        
+
         <div className="mt-4 md:mb-20">
           {faqs.map((faq, index) => (
-            <Accordion key={index} className="py-2 rounded-none md:p-3 bg-tertiary-light">
+            <Accordion
+              key={index}
+              className="py-2 rounded-none md:p-3 bg-tertiary-light"
+            >
               <AccordionSummary
                 expandIcon={<RightArrowIcon />}
                 aria-controls="panel1-content"

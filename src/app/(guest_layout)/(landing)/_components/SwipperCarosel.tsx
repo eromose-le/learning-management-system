@@ -33,6 +33,7 @@ const SwipperCarosel = ({
       autoplay={{
         delay: 1500,
         disableOnInteraction: false,
+        // stopOnLastSlide: true
       }}
       modules={[Autoplay, Pagination, Navigation]}
       className={clsx("flex items-center justify-center w-full", className)}

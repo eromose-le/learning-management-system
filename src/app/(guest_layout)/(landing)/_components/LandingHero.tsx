@@ -2,6 +2,7 @@ import Container from "@/common/Container";
 import { Button, Typography } from "@mui/material";
 import heroImage from "../../../../../public/images/hero-image.svg";
 import Image from "next/image";
+import Reveals from "@/common/Reveals";
 
 export default function LandingHero() {
   return (
@@ -11,9 +12,11 @@ export default function LandingHero() {
     >
       <div className="flex-1">
         <div className="flex flex-col max-w-md gap-6 mt-6 text-center md:text-start md:gap-8 md:mt-0">
-          <Typography variant="h1" className="font-semibold text-secondary">
-            Transforming Education, Empowering Success
-          </Typography>
+          <Reveals>
+            <Typography variant="h1" className="font-semibold text-secondary">
+              Transforming Education, Empowering Success
+            </Typography>
+          </Reveals>
           <Typography variant="h6" className="font-normal text-tertiary">
             Streamline School Management and Elevate Learning Experiences with
             Our Innovative Platform
