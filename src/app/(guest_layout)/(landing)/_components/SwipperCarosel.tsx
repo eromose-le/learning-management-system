@@ -18,11 +18,13 @@ const SwipperCarosel = ({
 }) => {
   const theme = useTheme();
   const isSm = useMediaQuery(theme.breakpoints.up("sm"));
+  const isMd = useMediaQuery(theme.breakpoints.up("md"));
+
   return (
     <Swiper
-      slidesPerView={isSm ? 2 : 1.1}
+      slidesPerView={isMd ? (isSm ? 2 : 3) : 1.1}
       freeMode={true}
-      spaceBetween={isSm ? 200 : 20}
+      spaceBetween={isMd ? 60 : 20}
       pagination={{
         clickable: true,
       }}
@@ -36,7 +38,12 @@ const SwipperCarosel = ({
       className={clsx("flex items-center justify-center w-full", className)}
     >
       {slides.map((slide, index) => (
-        <SwiperSlide className="md:max-w-md" key={index}>{slide}</SwiperSlide>
+        <SwiperSlide
+          className={`${isMd ? "w-[440px]" : "max-w-[340px] mr-10"}`}
+          key={index}
+        >
+          {slide}
+        </SwiperSlide>
       ))}
     </Swiper>
   );
