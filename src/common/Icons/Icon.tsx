@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { SVGIconProps } from "./SVGIcon";
-import { TIconPack, iconPack } from "@sv/assets/icons";
+import { TIconPack, iconPack } from "@/assets/icons";
 
 export interface IconProps {
   color?: SVGIconProps["color"];

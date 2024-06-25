@@ -13,7 +13,7 @@ const LandingBanner = () => {
           variant="h1"
           className="max-w-screen-sm font-semibold text-center text-white md:text-left "
         >
-          Ready to Elevate Your School's Educational Experience?
+          Ready to Elevate Your School&apos;s Educational Experience?
         </Typography>
         <Button size="medium" variant="contained">
           Get started
