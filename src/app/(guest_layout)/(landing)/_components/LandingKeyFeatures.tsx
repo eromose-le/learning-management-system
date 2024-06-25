@@ -62,7 +62,7 @@ const LandingKeyFeatures = () => {
                 <Typography variant="h4" className="font-bold text-tertiary">
                   {feature.index}
                 </Typography>
-                <Typography variant="h5" className="font-bold text-white">
+                <Typography variant="h5" className="font-bold text-white z-10">
                   {feature.value}
                 </Typography>
               </div>
