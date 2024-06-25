@@ -202,6 +202,9 @@ export function customizeTheme(theme: ThemeOptions = {}) {
       },
       MuiButton: {
         styleOverrides: {
+          sizeSmall: {
+            fontSize: 12,
+          },
           sizeMedium: {
             fontSize: 14,
           },
@@ -222,6 +225,7 @@ export function customizeTheme(theme: ThemeOptions = {}) {
               borderRadius: 16,
               background: "#0063DB",
               color: "#E6EAEE",
+              boxShadow: "none",
               ":hover": {
                 color: "#fff",
                 background: "#0063DB",

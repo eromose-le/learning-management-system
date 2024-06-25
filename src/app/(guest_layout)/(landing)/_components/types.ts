@@ -23,3 +23,8 @@ export interface LandingDescriptionCardProps {
   arrowPosition: string;
   arrowIconType: ArrowIconType;
 }
+
+export type FaqType = {
+  question: string,
+  answer: string;
+}

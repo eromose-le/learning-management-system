@@ -4,6 +4,7 @@ import LandingDescription from "./_components/LandingDescription";
 import LandingKeyFeatures from "./_components/LandingKeyFeatures";
 import LandingTestimonial from "./_components/LandingTestimonial";
 import LandingBanner from "./_components/LandingBanner";
+import LandingFaq from "./_components/LandingFaq";
 
 export default function LandingPage() {
   return (
@@ -14,6 +15,7 @@ export default function LandingPage() {
       <LandingKeyFeatures />
       <LandingTestimonial />
       <LandingBanner />
+      <LandingFaq />
     </>
   );
 }
