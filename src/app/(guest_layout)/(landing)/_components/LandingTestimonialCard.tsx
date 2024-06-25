@@ -19,7 +19,7 @@ const LandingTestimonialCard: React.FC<Testimonial> = ({
   const starIconSize = isMd ? 32 : 24;
   const userImageSize = `${isMd ? "h-[93px] w-[93px]" : "h-[57px] w-[57px]"}`;
   return (
-    <div className="flex flex-col items-center justify-center gap-12 px-8 bg-tertiary-dark md:gap-18 py-9 md:py-12 md:px-12 h-[320px] max-w-96 md:max-w-md rounded-2xl md:rounded-3xl">
+    <div className="flex flex-col items-center justify-center gap-12 px-8 bg-tertiary-dark md:gap-18 py-9 md:py-12 md:px-12 h-[320px] md:h-[420px] max-w-96 md:max-w-md rounded-2xl md:rounded-3xl">
       <div className="flex flex-col items-center justify-start gap-4 h-[265px]  md:gap-6">
         <Rating
           className="justify-center gap-2 p-0 m-0"

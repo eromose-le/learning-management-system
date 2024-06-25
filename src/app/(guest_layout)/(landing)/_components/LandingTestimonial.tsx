@@ -1,5 +1,3 @@
-// LandingTestimonial.tsx
-import React from "react";
 import Container from "@/common/Container";
 import { Typography } from "@mui/material";
 import LandingTestimonialCard from "./LandingTestimonialCard";
@@ -37,9 +35,11 @@ const testimonials: Testimonial[] = [
 ];
 
 const LandingTestimonial: React.FC = () => {
-  const mobileSlides = testimonials.map((testimonial: Testimonial, index: number) => (
-    <LandingTestimonialCard key={index} {...testimonial} />
-  ));
+  const mobileSlides = testimonials.map(
+    (testimonial: Testimonial, index: number) => (
+      <LandingTestimonialCard key={index} {...testimonial} />
+    )
+  );
 
   return (
     <Container component="section" className="flex-col w-full py-8 md:py-20">

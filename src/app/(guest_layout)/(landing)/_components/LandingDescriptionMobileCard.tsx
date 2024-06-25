@@ -1,4 +1,3 @@
-import React from "react";
 import { Box, Typography } from "@mui/material";
 import clsx from "clsx";
 
@@ -8,24 +7,7 @@ import ArrowUpIcon from "@/assets/icons/pack/ArrowUp";
 import ArrowUpInverseIcon from "@/assets/icons/pack/ArrowUpInverse";
 import BriefCaseIcon from "@/assets/icons/pack/BriefCase";
 import SecuritySafeIcon from "@/assets/icons/pack/SecuritySafe";
-
-// Define prop types
-type IconType = "guidance" | "learning" | "default";
-type PositionType = "top" | "bottom";
-type CardStyleType = "default" | "rotated" | "mirrored";
-type ArrowIconType = "default" | "inverse";
-
-interface LandingDescriptionCardProps {
-  position: PositionType;
-  iconType: IconType;
-  title: string;
-  subtitle: string;
-  subtitle2: string;
-  description: string;
-  cardStyle: CardStyleType;
-  arrowPosition: string;
-  arrowIconType: ArrowIconType;
-}
+import { IconType, ArrowIconType, LandingDescriptionCardProps } from "./types";
 
 // Utility function to render icons based on type
 const renderIcon = (type: IconType) => {
